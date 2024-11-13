@@ -76,12 +76,12 @@ const StudentListPage = () => {
         <div className="flex items-center gap-2">
           <Link href={`/list/teachers/${item.id}`}>
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-alifSky">
-              <Image src="/view.png" alt="" width={16} height={16} />
+              <Image src="/view.png" alt="" width={36} height={20} />
             </button>
           </Link>
           {role === "admin" && (
             // <button className="w-7 h-7 flex items-center justify-center rounded-full bg-alifPurple">
-            //   <Image src="/delete.png" alt="" width={16} height={16} />
+            //   <Image src="/delete.png" alt="" width={36} height={20} />
             // </button>
             <FormModal table="student" type="delete" id={item.id} />
           )}
@@ -99,14 +99,14 @@ const StudentListPage = () => {
           <TableSearch />
           <div className="flex items-center gap-4 self-end">
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-alifYellow">
-              <Image src="/filter.png" alt="" width={14} height={14} />
+              <Image src="/filter.png" alt="" width={36} height={20} />
             </button>
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-alifYellow">
-              <Image src="/sort.png" alt="" width={14} height={14} />
+              <Image src="/sort.png" alt="" width={36} height={20} />
             </button>
             {role === "admin" && (
               // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-alifYellow">
-              //   <Image src="/plus.png" alt="" width={14} height={14} />
+              //   <Image src="/plus.png" alt="" width={36} height={20} />
               // </button>
               <FormModal table="student" type="create" />
             )}
